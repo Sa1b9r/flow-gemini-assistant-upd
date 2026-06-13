@@ -115,14 +115,15 @@ class Main(FlowLauncher):
                 }
             }]
         
-        if not q_lower or not q_lower.endswith("||"):
+        param_clean = param.strip()
+        if not param_clean or not param_clean.endswith("||"):
             return [{
                 "Title": _l("Ask Gemini"),
                 "SubTitle": _l("Write your query with || at the end to get the response..."),
                 "IcoPath": icon_path
             }]
         
-        return api_request(q_lower, current_model, api_key)
+        return api_request(param_clean, current_model, api_key)
     
     def change_query(self, query, requery=False):
         FlowLauncherAPI.change_query(query, requery)

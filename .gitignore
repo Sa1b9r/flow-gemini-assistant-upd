@@ -12,3 +12,4 @@ test.py
 commands.py
 .env
 config.json
+.venv/
