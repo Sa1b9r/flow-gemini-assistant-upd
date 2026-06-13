@@ -74,7 +74,7 @@ except:
 
 # the information of package
 __package_name__ = "AI Assistant for Gemini"
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 __short_description__ = "Quick AI queries using Google's Gemini API"
 GITHUB_USERNAME = "Axforzi"
 
